@@ -1,62 +1,31 @@
-# Taller 01: Sistema de Control del Grupo POO
-# Integrante: 
-* Benjamín Araya - [Ingresa tu RUT aquí] - ICCI
+# Taller 1: Gestión de Acceso al Grupo de POO
 
-Asignatura: Programación Orientada a Objetos
+* Este programa, desarrollado en Java, tiene como propósito administrar la entrada al grupo de la materia POO. Su función principal es validar y separar a los estudiantes que están matriculados oficialmente de las personas externas que intentan unirse a través de links compartidos.
 
-Semestre: II Semestre - 2026
+Autor
 
-Universidad Católica del Norte
+Benjamin Araya Trigo - 22.250.820-7 - ICCI
 
-Descripción del Proyecto
-Este proyecto es un sistema de consola desarrollado en Java estructurado (sin uso de POO ni colecciones dinámicas) diseñado para administrar el acceso a un grupo de estudio. El sistema cruza automáticamente un archivo de alumnos oficialmente inscritos (Alumnos.txt) con un archivo de intentos de ingreso (Solicitudes.txt), permitiendo además la inscripción manual, administración de paralelos, generación de reportes físicos (en una carpeta Reportes/) y cálculo de estadísticas en tiempo real.
+# Detalles de Implementación
 
-Requisitos Previos
-Java Development Kit (JDK): Versión 21 (o superior).
+El sistema fue programado de manera estructurada (no se aplicó Programación Orientada a Objetos).
 
-Archivos de entrada: Los archivos Alumnos.txt y Solicitudes.txt deben estar ubicados en la raíz del proyecto (mismo nivel que la carpeta src o donde se ejecute el programa) siguiendo el formato establecido con separadores ; y - respectivamente.
+El almacenamiento de datos en memoria se maneja exclusivamente a través de arreglos (vectores) estáticos.
 
-Instrucciones de Ejecución (Clonación y Testeo)
-Para clonar y ejecutar este proyecto en tu entorno local, sigue estos pasos desde la terminal de comandos:
+Para el funcionamiento del código, solo se importaron las siguientes herramientas: Scanner, File, FileWriter, BufferedWriter y IOException.
 
-Clonar el repositorio:
+# Requerimientos Previos
 
-Bash
-git clone [ENLACE_DE_TU_REPOSITORIO_AQUI]
-cd [NOMBRE_DE_LA_CARPETA_DEL_REPOSITORIO]
-Compilar el código fuente:
-Dependiendo de la estructura de tus carpetas (por ejemplo, si el código está dentro de src/Clasestambien/), compila el archivo principal:
+Lenguaje de programación: Java
 
-Bash
-javac src/Clasestambien/Taller1.java
-Ejecutar el programa:
-Una vez compilado, ejecuta la clase principal:
+Entorno de desarrollo sugerido: Eclipse
 
-Bash
-java -cp src Clasestambien.Taller1
-Uso del Sistema
-Al ejecutar el programa, se desplegará el menú principal. Sigue este orden recomendado para testear todas las funcionalidades:
+Pasos para compilar y probar
 
-Opción 1 (Cargar archivos): Obligatorio antes de realizar cualquier otra acción. Carga los datos en los vectores estáticos.
+Descarga o clona la carpeta de este repositorio en tu equipo.
 
-Opción 2 (Procesar solicitudes): Filtra automáticamente a los admitidos y rechazados cruzando los datos.
+Carga el proyecto utilizando tu IDE de preferencia.
 
-Opción 3 (Inscripción manual): Prueba ingresar a un alumno por su nombre completo o simulando el caso especial ingresando solo un RUT que no existe en la lista.
+Verifica que los documentos de texto Alumnos.txt y Solicitudes.txt estén descargados y guardados en el mismo directorio principal donde se encuentra el código fuente.
 
-Opción 4 (Administración): Permite cambiar a un alumno de paralelo (C1 a C2), eliminarlo del curso o agregar un alumno nuevo. Nota: Los cambios modificarán de forma persistente el archivo Alumnos.txt.
-
-Opción 5 (Generar reportes): Crea de forma automática la carpeta Reportes/ (si no existe) y genera archivos .txt versionados (ej. ReporteC1-V1.txt, Rechazados-V1.txt) con el estado actual del grupo.
-
-Opción 6 (Estadísticas): Muestra un análisis del porcentaje de rechazos, distribución por paralelos, tasa de admisión, entre otros.
-
-Opción 7 (Salir): Finaliza de forma segura la ejecución del programa.
-
-Estructura de Archivos Generados
-Una vez ejecutada la opción de reportes, el sistema creará automáticamente la siguiente estructura:
-
-Plaintext
-Reportes/
-├── ReporteC1-V1.txt
-├── ReporteC2-V1.txt
-└── Rechazados-V1.txt
-Cada vez que se vuelva a solicitar un reporte, la versión (V2, V3, etc.) aumentará automáticamente para mantener un historial de los cambios.
+Inicia la ejecución del archivo principal (taller01).
