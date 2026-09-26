@@ -1,7 +1,6 @@
 # Taller 1: Gestión de Acceso al Grupo de POO
 
-* Este programa, desarrollado en Java, tiene como propósito administrar la entrada al grupo de la materia POO. Su función principal es validar y separar a los estudiantes que están matriculados oficialmente de las personas externas que intentan unirse a través de links compartidos.
-
+* El propósito de este código en Java es controlar el acceso al grupo del curso de POO. Se encarga de filtrar a los alumnos oficialmente inscritos y bloquear a cualquier persona externa que intente ingresar mediante un enlace público.
 Autor
 
 Benjamin Araya Trigo - 22.250.820-7 - ICCI
